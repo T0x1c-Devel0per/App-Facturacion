@@ -1,0 +1,253 @@
+h1 {
+  color: white;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+body {
+  background-color: #2d2d2d;
+  overflow-x: hidden;
+}
+
+textarea {
+  margin-top: 5px;
+  border-radius: 5px !important;
+  height: 100px;
+}
+
+label {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  /* Firefox */
+  appearance: textfield;
+  /* Otros navegadores */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: #fffefe;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 3px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+}
+
+#data-table {
+  color: white;
+  width: 100%;
+}
+
+#data-table th {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  width: 5px;
+}
+
+#data-table tr {
+  width: 10px !important;
+}
+
+.input-area {
+  background-color: teal;
+  border-color: teal;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: #66666600 !important;
+}
+
+.info-container {
+  margin-top: 10px;
+}
+
+.container-textarea span {
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px !important;
+}
+
+.navbar-cont {
+  box-shadow: 0px 5px teal;
+}
+
+.div-navbar {
+  background: #212529;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.loading-overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+}
+
+.input-search {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn-spacing {
+  margin-bottom: 2vh;
+}
+
+.bi {
+  color: white;
+}
+
+.form-container {
+  max-width: 99%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid #d1d1d1;
+  background-color: #212529;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input-group-text.center-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-container {
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.table tbody td {
+  max-width: 500px;
+  /* Establece un ancho máximo para las celdas */
+  overflow: hidden;
+  /* Oculta el contenido que excede el ancho máximo */
+  text-overflow: ellipsis;
+  /* Agrega puntos suspensivos (...) al final del texto cortado */
+  white-space: nowrap;
+  /* Evita que el texto se divida en múltiples líneas */
+}
+
+.table-container thead th {
+  color: #b79137;
+  vertical-align: top;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center !important;
+}
+
+.table-container tbody {
+  vertical-align: top;
+  white-space: inherit;
+}
+
+.inputEdit {
+  border: 1px solid black;
+  color: white;
+  background: none;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: right;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: teal;
+  width: 25%;
+  border-radius: 15px;
+  /* Color del "pulgar" (la parte que se arrastra) */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  /* Color del "pulgar" al pasar el mouse por encima */
+}
+
+/* Estilo para ocultar el icono del calendario en un input de tipo date */
+.custom-date-input input[type="date"]::-webkit-calendar-picker-indicator,
+.custom-date-input input[type="date"]::-webkit-inner-spin-button,
+.custom-date-input input[type="date"]::-webkit-clear-button {
+  display: none;
+}

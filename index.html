@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlaces a hojas de estilo y fuentes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@100&family=Ysabeau+SC:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Título de la página -->
+    <title>Inicio</title>
+</head>
+
+<body>
+    <!-- Overlay de carga -->
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="navbar-cont full-container">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <!-- Botón para colapsar la barra de navegación en dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1>Registro</h1>
+            </div>
+        </nav>
+        <!-- Contenido colapsable de la barra de navegación -->
+        <div class="div-navbar full-container d-flex justify-content-center">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+                            <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="bi bi-house"> Inicio </i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal del formulario -->
+    <div id="content" class="form-container container">
+        <h1>Servicio Técnico Sergio Rivera</h1>
+        <form id="mainForm" autocomplete="off">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <!-- Sección de información del usuario -->
+                        <div class="col-sm-6">
+                            <div class="container d-flex justify-content-flex-start">
+                                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="Registre aquí la información del usuario">
+                                    <p>Info Usuario <i class="bi bi-exclamation-circle"></i></p>
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Nombre Completo</label>
+                                <input type="text" class="form-control" id="Nombre" aria-describedby="emailHelp"
+                                    placeholder="Ingrese Nombre" autocomplete="off" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">N° Registro</label>
+                                        <input type="text" class="form-control cc-input" id="Cedula"
+                                            aria-describedby="emailHelp" placeholder="Ingrese El numero de Registro"
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Teléfono</label>
+                                        <input type="number" class="form-control" id="Telefono"
+                                            aria-describedby="emailHelp" placeholder="Ingrese Teléfono"
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Dirección</label>
+                                        <input type="text" class="form-control" id="Direccion"
+                                            aria-describedby="emailHelp" placeholder="Ingrese Dirección"
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sección de información del producto -->
+                        <div class="col-sm">
+                            <div class="container d-flex justify-content-flex-start">
+                                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-content="Registre aquí la información del Producto">
+                                    <p>Info Registro <i class="bi bi-exclamation-circle"></i></p>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Articulo</label>
+                                        <input type="text" class="form-control" id="Articulo"
+                                            aria-describedby="emailHelp" placeholder="Ingrese Articulo">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Marca</label>
+                                        <input type="text" class="form-control" id="Marca" aria-describedby="emailHelp"
+                                            placeholder="Ingrese Marca">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Modelo</label>
+                                        <input type="text" class="form-control" id="Modelo" aria-describedby="emailHelp"
+                                            placeholder="Ingrese Modelo">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Total</label>
+                                        <input type="text" class="form-control money-input" id="Total"
+                                            aria-describedby="emailHelp" placeholder="Ingrese Total">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Abono</label>
+                                        <input type="text" class="form-control money-input1" id="Abono"
+                                            aria-describedby="emailHelp" placeholder="Ingrese Abono">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Saldo</label>
+                                        <input type="text" class="form-control total-input" id="Saldo"
+                                            aria-describedby="emailHelp" placeholder="Ingrese Saldo" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de fechas -->
+            <div class="row">
+                <div class="container d-flex justify-content-flex-start">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-content="Registre aquí la fecha de la factura y la fecha de entrega">
+                        <p>Fecha Registro <i class="bi bi-exclamation-circle"></i></p>
+                    </span>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Fecha Del Registro</label>
+                        <input type="date" class="custom-date-input form-control" id="FechaRegistro"
+                            aria-describedby="emailHelp" name="FechaRegistro">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Fecha De Retiro</label>
+                        <input type="date" class="form-control" id="FechaEntrega" aria-describedby="emailHelp">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de descripción general -->
+            <div class="row">
+                <div class="container d-flex justify-content-flex-start">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-content="Registre aquí una descripción General del servicio">
+                        <p>Descripción General <i class="bi bi-exclamation-circle"></i></p>
+                    </span>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="input-group w-100">
+                        <span class="input-group-text input-area w-100 center-text">Características</span>
+                        <textarea id="Caracteristicas" class="form-control w-100" aria-label="With textarea"
+                            placeholder="Características"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="input-group w-100">
+                        <span class="input-group-text input-area w-100 center-text">Detalles Del Servicio</span>
+                        <textarea id="DetalleServicio" class="form-control w-100" aria-label="With textarea"
+                            placeholder="Detalles Del Servicio"></textarea>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <div class="input-group w-100">
+                        <span class="input-group-text input-area w-100 center-text">Observaciones</span>
+                        <textarea id="Observaciones" class="form-control w-100" aria-label="With textarea"
+                            placeholder="Observaciones"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="container mt-5">
+                <div>
+                    <div>
+                        <button type="submit" id="btn-save" class="btn btn-success btn-block"
+                            onclick="guardar()">Guardar Datos</button>
+                        <button type="button" id="btn-edit" class="btn btn-info" style="display: none;">Confirmar
+                            Edición</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Panel de control con tabla de registros -->
+    <div class="form-container container">
+        <div class="container">
+            <h1>Panel de Control</h1>
+        </div>
+
+        <div id="divListar" class="container mt-5">
+            <div class="container table-container">
+                <table id="Billing-table" class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Eliminar</th>
+                            <th>Editar</th>
+                            <th>N° Registro</th>
+                            <th>Nombre</th>
+                            <th>Total</th>
+                            <th>Abono</th>
+                            <th>Saldo</th>
+                            <th>Fecha Registro</th>
+                            <th>Fecha Entrega</th>
+                            <th>Teléfono</th>
+                            <th>Dirección</th>
+                            <th>Artículo</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Características</th>
+                            <th>Detalle Servicio</th>
+                            <th>Observaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="form2-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="JS/scripts.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/070233a5c9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+</body>
+
+</html>
