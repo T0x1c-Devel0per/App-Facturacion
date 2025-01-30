@@ -25,8 +25,8 @@ Asegúrate de tener instalado:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/registro-facturas.git
-   cd registro-facturas
+   git clone https://github.com/T0x1c-Devel0per/App-Facturacion/tree/main
+   cd AppFacturacion
    ```
 2. Inicia la aplicación:
 - Corre el archivo Index.html
